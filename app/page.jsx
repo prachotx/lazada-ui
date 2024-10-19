@@ -14,11 +14,11 @@ export default function Home() {
       <TopContent />
       <div className="bg-[#f5f5f5] pt-[10px]">
         <Service />
-        <Product />
+        {/* <Product />
         <Footer_1 />
         <Footer_2 />
         <Footer_3 />
-        <Footer_4 />
+        <Footer_4 /> */}
       </div>
     </main>
   );

@@ -9,7 +9,7 @@ export default function TopContent() {
                     <div className="w-full">
                         <img className="h-full" src="https://img.lazcdn.com/us/domino/31d3a0dd-60d7-4c46-920c-b84fea1555f2_TH-1976-688.jpg_2200x2200q80.jpg" />
                     </div>
-                    <div className="bg-gradient-to-r from-[#ffedd6] to-[#ffc3e3] w-[230px] h-[344px] p-[6px]">
+                    <div className="bg-gradient-to-r from-[#ffedd6] to-[#ffc3e3] w-[230px] h-[344px] p-[6px] hidden lg:block">
 
                         <div className="flex items-center mb-2">
                             <img className="w-[42px] h-[42px]" src="https://img.lazcdn.com/us/domino/47866b83cc0d0a3c74d429f89ff42423.png_2200x2200q80.png_.webp" data-spm-anchor-id="a2o4m.homepage.4159995340.i0.11257f6dEndZqQ" />
