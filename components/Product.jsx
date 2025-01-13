@@ -1,8 +1,9 @@
-import Wrapper from "./Wrapper";
-import { IoIosArrowForward } from "react-icons/io";
-import { FaStar } from "react-icons/fa";
+import Wrapper from "./Wrapper"
+import { IoIosArrowForward } from "react-icons/io"
+import { FaStar } from "react-icons/fa"
+import { IoIosMore } from "react-icons/io"
 
-export default function Product() {
+const Product = () => {
     const products = [
         {
             text: "197.00"
@@ -74,16 +75,17 @@ export default function Product() {
             text: "Outdoor Lighting"
         },
     ]
+
     return (
         <section>
             <Wrapper>
                 <div className="mt-[30px]">
                     <h2 className="text-[#424242] text-[22px] mb-[4px]">Flash Sale</h2>
                     <div className="bg-white">
-                        <div className="flex items-center justify-between border-b-[1px] border-[#d5d5d5]">
-                            <div className="flex items-center ">
+                        <div className="flex items-start md:items-center justify-between border-b-[1px] border-[#d5d5d5]">
+                            <div className="flex md:items-center flex-col md:flex-row">
                                 <span className="text-[#f57224] text-[14px] font-medium p-[20px]">On Sale Now</span>
-                                <div className="flex items-center ml-[50px]">
+                                <div className="flex items-center ml-[20px] mb-[20px] md:ml-[50px] md:mb-0">
                                     <span className="text-[14px] text-[#424242] mr-[14px]">Ending in</span>
                                     <div className="flex items-center">
                                         <div className="text-white flex items-center justify-center bg-[#d3232a] w-[40px] h-[35px] rounded-[2px]">11</div>
@@ -94,10 +96,12 @@ export default function Product() {
                                     </div>
                                 </div>
                             </div>
-                            <a className="mr-[10px] px-[10px] py-[6px] text-[#f57224] text-[14px] font-medium uppercase border-[1px] border-[#f57224]" href="">shop all products</a>
+                            <a className="mt-[20px] md:mt-0 mr-[20px] px-[10px] py-[6px] text-[#f57224] text-[14px] font-medium uppercase border-[1px] border-[#f57224]" href="">
+                                <span className="hidden md:block">shop all products</span>
+                                <span className="block md:hidden text-lg"><IoIosMore /></span>
+                            </a>
                         </div>
-                        <div className="grid grid-cols-6 gap-2 py-[10px]">
-
+                        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2 py-[10px]">
                             {products.map((item, index) => (
                                 <div key={index} className="cursor-pointer hover:shadow-lg">
                                     <div><img className="w-full h-full" src="https://placehold.co/188x188" alt="" /></div>
@@ -115,7 +119,6 @@ export default function Product() {
                                     </div>
                                 </div>
                             ))}
-
                         </div>
                     </div>
                 </div>
@@ -127,9 +130,8 @@ export default function Product() {
                             <span className="text-[20px]"><IoIosArrowForward /></span>
                         </a>
                     </h2>
-                    <div className="grid grid-cols-6 gap-2">
-
-                        {products.map((item, index) => (
+                    <div className="grid grid-cols-3 lg:grid-cols-6 gap-2">
+                        {products.map((index) => (
                             <div key={index} className="cursor-pointer hover:shadow-lg">
                                 <div className="relative">
                                     <img className="w-full h-full" src="https://placehold.co/188x188" alt="" />
@@ -143,12 +145,11 @@ export default function Product() {
                                 </div>
                             </div>
                         ))}
-
                     </div>
                 </div>
                 <div className="mt-[30px]">
                     <h2 className="text-[#424242] text-[22px]">Categories</h2>
-                    <div className="grid grid-cols-8 bg-white">
+                    <div className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-8 bg-white">
                         {categories.map((item, index) => (
                             <div key={index} className="border-[1px] border-gray-100 cursor-pointer hover:shadow-lg">
                                 <div className="w-[80px] h-[80px] mx-auto pt-[16px]"><img className="w-full h-full" src="https://placehold.co/80x80" alt="" /></div>
@@ -160,7 +161,7 @@ export default function Product() {
                 <div className="mt-[30px]">
                     <h2 className="text-[#424242] text-[22px] mb-[4px]">Just For You</h2>
           
-                        <div className="grid grid-cols-6 gap-2">
+                        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2">
                             {products.map((item, index) => (
                                 <div key={index} className="cursor-pointer hover:shadow-lg">
                                     <div><img className="w-full h-full" src="https://placehold.co/188x188" alt="" /></div>
@@ -191,3 +192,5 @@ export default function Product() {
         </section>
     )
 }
+
+export default Product

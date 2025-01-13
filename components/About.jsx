@@ -1,11 +1,10 @@
-import Wrapper from "./Wrapper";
+import Wrapper from "./Wrapper"
 
-export default function Footer_3() {
+const About = () => {
     return (
-        <section>
+        <section className="hidden md:block">
             <Wrapper>
                 <div className="grid grid-cols-4 gap-16 py-[50px]">
-
                     <div>
                         <div>
                             <h3 className="text-[16px] text-[#606060] mb-[4px] leading-[20px]">Best Shopping Experience Guaranteed at Lazada Thailand Lazada: Redefining “Effortless Shopping”</h3>
@@ -24,7 +23,6 @@ export default function Footer_3() {
                             </p>
                         </div>
                     </div>
-
                     <div>
                         <div>
                             <p className="text-[12px] text-[#888] leading-[14px]">hundreds of top brands worldwide. There are more and more renowned sellers joining our community to serve you too. RedMart also offers a vast selection of grocery items at the lowest prices.</p>
@@ -42,7 +40,6 @@ export default function Footer_3() {
                             <p className="text-[12px] text-[#888] mb-[8px] leading-[14px]">Attractive deals can be purchased on the website daily. Discount codes and multiple vouchers can be redeemed to make the most of your shopping. Scoop up these incredible promo codes especially during our campaign periods including Birthday Sale, Women’s Festival, Mid-Year Festival, 9.9 Sale and Lazada’s most anticipated online shopping festivals: 11.11 and 12.12 Sales!</p>
                         </div>
                     </div>
-
                     <div>
                         <h3 className="text-[16px] text-[#606060] mb-[4px]">TOP CATEGORIES & BRANDS</h3>
                         <div className="text-[11px]">
@@ -74,7 +71,6 @@ export default function Footer_3() {
                             <p className="text-[#888] mb-[8px] leading-[14px]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, reprehenderit? Rem, autem. Minima ab excepturi dolorem saepe qui.</p>
                         </div>
                     </div>
-
                     <div>
                         <div className="text-[11px]">
                             <h4 className="text-[#606060]">MOTHER & BABY</h4>
@@ -105,9 +101,10 @@ export default function Footer_3() {
                             <p className="text-[#888] mb-[8px] leading-[14px]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, reprehenderit? Rem, autem. Minima ab excepturi dolorem saepe qui.</p>
                         </div>
                     </div>
-
                 </div>
             </Wrapper>
         </section>
     )
 }
+
+export default About
