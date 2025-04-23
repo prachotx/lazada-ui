@@ -7,7 +7,11 @@ const TopContent = () => {
             <Wrapper>
                 <div className="flex justify-between">
                     <div className="w-full">
-                        <img className="h-full" src="https://img.lazcdn.com/us/domino/31d3a0dd-60d7-4c46-920c-b84fea1555f2_TH-1976-688.jpg_2200x2200q80.jpg" />
+                        <img
+                            className="w-full h-full object-cover"
+                            src="https://img.lazcdn.com/us/domino/31d3a0dd-60d7-4c46-920c-b84fea1555f2_TH-1976-688.jpg_2200x2200q80.jpg"
+                            alt="Top Content"
+                        />
                     </div>
                     <div className="bg-gradient-to-r from-[#ffedd6] to-[#ffc3e3] w-[230px] h-[344px] p-[6px] hidden lg:block">
                         <div className="flex items-center mb-2">
